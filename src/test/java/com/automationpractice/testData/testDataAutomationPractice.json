@@ -1,0 +1,7 @@
+{
+  "testData": {
+    "quantity": 2,
+    "expectedColorAndSize": "Blue, L",
+    "expectedSuccessfullyAddedMessage": "Product successfully added to your shopping cart"
+  }
+}
