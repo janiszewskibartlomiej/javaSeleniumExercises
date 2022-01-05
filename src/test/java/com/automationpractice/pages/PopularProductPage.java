@@ -22,7 +22,7 @@ public class PopularProductPage extends AbstractPage {
     }
 
     public WebElement switchToIframeProductCart() {
-        waitForElementVisile(CLOSE_PRODUCT_CART);
+        waitForElementVisible(CLOSE_PRODUCT_CART);
         return switchToIframe(getElement(IFRAME_PRODUCTS_CART));
     }
 
@@ -39,7 +39,7 @@ public class PopularProductPage extends AbstractPage {
     }
 
     public void selectSize() {
-        selectValueByLastIdex(SIZE_OF_PRODUCTS_SELECT);
+        selectValueByLastIndex(SIZE_OF_PRODUCTS_SELECT);
     }
 
     public String getNameOfProduct() {

@@ -16,7 +16,7 @@ public class ShoppingCartPage extends AbstractPage {
     public ShoppingCartPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
-        waitForElementVisile(OK_ICON);
+        waitForElementVisible(OK_ICON);
     }
 
     public String getCurrentProductName() {

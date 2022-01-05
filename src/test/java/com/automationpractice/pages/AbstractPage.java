@@ -58,12 +58,12 @@ public abstract class AbstractPage {
         getElement(selector).click();
     }
 
-    protected void waitForElementVisile(By selector) {
+    protected void waitForElementVisible(By selector) {
         WebDriverWait wait = new WebDriverWait(driver, DEFAULT_TIMEOUT);
         wait.until(ExpectedConditions.visibilityOfElementLocated(selector));
     }
 
-    protected void selectValueByLastIdex(By selector) {
+    protected void selectValueByLastIndex(By selector) {
         Select select = new Select(getElement(selector));
         List<WebElement> optionList = select.getOptions();
         select.selectByIndex(optionList.size() - 1);
@@ -74,7 +74,7 @@ public abstract class AbstractPage {
     }
 
     protected boolean elementIsVisible(By selector) {
-        waitForElementVisile(selector);
+        waitForElementVisible(selector);
         return getElement(selector).isDisplayed();
     }
 }
