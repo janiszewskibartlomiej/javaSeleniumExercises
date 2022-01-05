@@ -39,10 +39,8 @@ public class AutomationPracticeTest {
         2. Add Quantity as "2" by typing it into the proper field. Choose the biggest size and another color.
         3. Add product to the cart.
         4. Proceed to checkout
-        5. Decrease the Quantity of the product to the one "1" by clicking on the "-" icon
-        6. Remove the product from the cart
-        7. Make assertions in tests when it is needed, using your experience.
-        8. Add code to Git for review
+        5. Make assertions in tests when it is needed, using your experience.
+        6. Add code to Git for review
          */
 
         //Given
