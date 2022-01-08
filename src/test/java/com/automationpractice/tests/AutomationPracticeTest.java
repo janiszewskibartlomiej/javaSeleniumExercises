@@ -69,6 +69,14 @@ public class AutomationPracticeTest {
         Assertions.assertEquals(testData.get("expectedColorAndSize"), currentColorAndSize);
         // When
         uiSteps.protectedToCheckout();
-
+        String nameOfProductOnShoppingCartSummary = uiSteps.getProductNameOnShoppingCartSummary();
+        long quantityOnShoppingCartSummary = uiSteps.getQuantityOnShoppingCartSummary();
+        String colorAndSizeOnShoppingCartSummary = uiSteps.getColorAndSizeOnShoppingCartSummary();
+        String totalPriceOnShoppingCartSummary = uiSteps.getTotalPriceOnShoppingCartSummary();
+        //Then
+        Assertions.assertEquals(nameOfProduct, nameOfProductOnShoppingCartSummary);
+        Assertions.assertEquals(testData.get("quantity"), quantityOnShoppingCartSummary);
+        Assertions.assertEquals(testData.get("expectedColorAndSizeOnShoppingCartSummary"), colorAndSizeOnShoppingCartSummary);
+        Assertions.assertEquals(expectedTotalPrice, totalPriceOnShoppingCartSummary);
     }
 }

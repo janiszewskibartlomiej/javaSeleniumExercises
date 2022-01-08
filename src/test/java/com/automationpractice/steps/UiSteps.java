@@ -3,6 +3,7 @@ package com.automationpractice.steps;
 import com.automationpractice.pages.HomePage;
 import com.automationpractice.pages.PopularProductPage;
 import com.automationpractice.pages.ShoppingCartPage;
+import com.automationpractice.pages.ShoppingCartSummaryPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -14,6 +15,7 @@ public class UiSteps {
     private HomePage homePage;
     private PopularProductPage popularProductPage;
     private ShoppingCartPage shoppingCartPage;
+    private ShoppingCartSummaryPage shoppingCartSummaryPage;
 
     public UiSteps(WebDriver driver) {
         this.driver = driver;
@@ -88,4 +90,22 @@ public class UiSteps {
         shoppingCartPage.protectedToCheckout();
     }
     //End region Shopping Cart Page
+
+    //Region Shopping Cart Summary Page
+    public String getProductNameOnShoppingCartSummary() {
+        shoppingCartSummaryPage = new ShoppingCartSummaryPage(driver);
+        return shoppingCartSummaryPage.getCurrentProductName();
+    }
+
+    public long getQuantityOnShoppingCartSummary() {
+        return shoppingCartSummaryPage.getQuantity();
+    }
+
+    public String getColorAndSizeOnShoppingCartSummary() {
+        return shoppingCartSummaryPage.getColorAndSize();
+    }
+
+    public String getTotalPriceOnShoppingCartSummary() {
+        return shoppingCartSummaryPage.getTotalPrice();
+    }
 }
