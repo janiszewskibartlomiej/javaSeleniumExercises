@@ -57,7 +57,7 @@ public class AutomationPracticeTest {
         uiSteps.addToCart();
 
         String currentNameOfProduct = uiSteps.getCurrentProductName();
-        String currentMessage = uiSteps.getMessageText();
+        String currentMessage = uiSteps.getShoppingCartMessageText();
         long currentQuantity = uiSteps.getCurrentQuantity();
         String currentColorAndSize = uiSteps.getCurrentColorAndSize();
         String currentTotalPrice = uiSteps.getCurrentTotalPrice();
