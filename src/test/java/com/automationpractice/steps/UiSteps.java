@@ -68,7 +68,7 @@ public class UiSteps {
         return shoppingCartPage.getCurrentProductName();
     }
 
-    public String getMessageText() {
+    public String getShoppingCartMessageText() {
         return shoppingCartPage.getMessageText();
     }
 
